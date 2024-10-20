@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Backend: add custom shortcode to CF7
  */
@@ -6,7 +7,7 @@ add_action('wpcf7_init', 'add_shortcode_cf7ic');
 function add_shortcode_cf7ic()
 {
     wp_enqueue_style('cf7ic_style'); // Enqueue CSS
-    
+
     wpcf7_add_form_tag('cf7ic', 'call_cf7ic');
 }
 
@@ -79,10 +80,10 @@ function call_cf7ic($tag)
             $value = "kc_human";
         } else {
             $value = "bot";
-        }
-        ;
-        $output .= '<label><input type="radio" name="kc_captcha" value="' . $value . '" />' . $image . '</label>';
+        };
+        $output .= '<label><input aria-label="' . ($i + 1) . '" type="radio" name="kc_captcha" value="' . $value . '" />' . $image . '</label>';
     }
+
     $output .= '
     </span>
     <span style="display:none">
@@ -147,7 +148,7 @@ function cf7ic_check_if_spam($result, $tag)
             $result->invalidate($tag, wpcf7_get_message('spam'));
         }
     }
-    
+
     return $result;
 }
 
@@ -176,5 +177,5 @@ function cf7ic_tag_generator($contact_form, $args = '')
                 value="<?php echo esc_attr(__('Insert Tag', 'contact-form-7')); ?>" />
         </div>
     </div>
-    <?php
+<?php
 }

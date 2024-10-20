@@ -4,7 +4,7 @@ Tags: Contact Form 7, Spam, CAPTCHA, GDPR, WPForms
 Requires at least: 4.7
 Requires PHP: 7.0
 Tested up to: 6.6
-Stable tag: 3.3.19
+Stable tag: 3.3.20
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -149,7 +149,10 @@ If the styling does not look right, you may need to clear your browser cache. If
 
 == Changelog ==
 
-= 3.3.18 [09/11/2024] =
+= 3.3.20 [10/20/2024] =
+* Add aria-labels + style WP Forms captcha
+
+= 3.3.19 [09/11/2024] =
 * Clean up
 
 = 3.3.18 [09/09/2024] =
