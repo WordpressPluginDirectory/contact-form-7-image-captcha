@@ -163,19 +163,18 @@ function cf7ic_add_tag_generator()
         'cf7ic',
         'WP Image CAPTCHA',
         'cf7ic_tag_generator',
-        array('nameless' => 1)
+        array('version' => '2')
     );
 }
 
 function cf7ic_tag_generator($contact_form, $args = '')
 {
     $args = wp_parse_args($args, array()); ?>
-    <div class="insert-box">
-        <input type="text" name="cf7ic" class="tag code" readonly="readonly" onfocus="this.select()" />
-        <div class="submitbox">
-            <input type="button" class="button button-primary insert-tag"
-                value="<?php echo esc_attr(__('Insert Tag', 'contact-form-7')); ?>" />
+     <footer class="insert-box">
+        <div class="flex-container">
+            <input type="text" name="cf7ic" class="tag code" readonly="readonly" onfocus="this.select()" value="[cf7ic]" />
+            <button type="button" class="button button-primary insert-tag"><?php echo esc_html(__('Insert Tag', 'contact-form-7')); ?></button>
         </div>
-    </div>
+    </footer>
 <?php
 }

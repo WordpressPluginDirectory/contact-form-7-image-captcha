@@ -4,7 +4,7 @@ Tags: Contact Form 7, Spam, CAPTCHA, GDPR, WPForms
 Requires at least: 4.7
 Requires PHP: 7.0
 Tested up to: 6.6
-Stable tag: 3.3.20
+Stable tag: 3.3.21
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -148,6 +148,9 @@ If the styling does not look right, you may need to clear your browser cache. If
 3. PRO plugin
 
 == Changelog ==
+
+= 3.3.21 [11/09/2024] =
+* Fix CF7 warning: 'Deprecated: WPCF7_TagGenerator::add(): Use of tag generator instances older than version 2 is deprecated. Version 1 instance (WP Image CAPTCHA) detected.'
 
 = 3.3.20 [10/20/2024] =
 * Add aria-labels + style WP Forms captcha
