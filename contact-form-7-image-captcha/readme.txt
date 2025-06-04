@@ -3,8 +3,8 @@ Contributors: hookandhook
 Tags: Contact Form 7, Spam, CAPTCHA, GDPR, WPForms
 Requires at least: 4.7
 Requires PHP: 7.0
-Tested up to: 6.6
-Stable tag: 3.3.21
+Tested up to: 6.8
+Stable tag: 3.3.25
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -148,6 +148,18 @@ If the styling does not look right, you may need to clear your browser cache. If
 3. PRO plugin
 
 == Changelog ==
+
+= 3.3.25 [06/04/2025] =
+* Fix CSS issue
+
+= 3.3.24 [06/03/2025] =
+* Fix CSS issue
+
+= 3.3.23 [04/18/2025] =
+* Tested up to 6.8
+
+= 3.3.22 [11/14/2024] =
+* Tested up to 6.7
 
 = 3.3.21 [11/09/2024] =
 * Fix CF7 warning: 'Deprecated: WPCF7_TagGenerator::add(): Use of tag generator instances older than version 2 is deprecated. Version 1 instance (WP Image CAPTCHA) detected.'
